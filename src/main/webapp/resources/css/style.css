@@ -1,0 +1,143 @@
+/*For Navigation*/
+.menu{
+	background-color: #f8f9fa;
+	/*boxshadowgenerator က သွားကြည့်လို့ရ */
+	box-shadow: 0 10px 20px rgba(0,0,0,.3);
+}
+
+.menu .navbar-nav .nav-item .nav-link{
+	padding: 0 1rem;
+	font-size: 1.2rem;
+
+}
+
+.menu .navbar-nav .nav-item .nav-link:hover{
+	color: green;
+}
+
+.container-carousel{
+	margin-top: 100px; 
+}
+
+.img-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.4);
+}
+
+/*Categories*/
+.wrapper:hover .fa-stack{ 
+	transition: 0.9s;
+	transform: rotate(360deg);
+}
+
+/*Best Seller*/
+
+/*Main Divider*/
+hr.divider{
+	max-width: 5.25rem;
+	border-width: 0.2rem;
+	border-color: green; 
+}
+
+/*Item Divider*/
+hr.item-divider{
+	max-width: 5.25rem;
+	border-width: 0.1rem;
+	border-color: green; 
+}
+
+/*Item Hover*/
+.card_img{
+	position: relative;
+}
+.detail{
+	position: absolute;
+	transition: 0.5s ease;
+	opacity: 0;
+	/*top: 50%;*/
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%,-50%);
+	text-align: center;
+
+}
+
+.card_img:hover .images{
+	opacity: 0.3;
+}
+
+.card_img:hover .detail{
+	opacity: 1;
+}
+
+.detail:hover .fa-stack{
+	color: green;
+	transition: 0.2s; 
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+/*New Arrival*/
+.new_arrival{
+  cursor: pointer;
+}
+
+.product-list-icon{
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+
+.new_arrival:hover .product-list-icon{
+  transform: scaleX(1);
+}
+
+.icon:hover{
+  color: #21ff00;
+}
+
+
+
+/*Contact in Home Page*/
+.contact{
+	background-image: url(#{request.contextPath}/resources/img/bg.jpg);
+	position: relative;
+	z-index: 1;
+}
+
+.contact:before{
+	content: '';
+	background-color: #000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	position: absolute;	
+	opacity: 0.7;
+}
+
+#count .p1[data-count]:after{
+  position:absolute;
+  right:10%;
+  top:8%;
+  content: attr(data-count);
+  font-size:70%;
+  padding:.2em;
+  border-radius:50%;
+  line-height:1em;
+  color: white;
+  background:rgba(255,0,0,.85);
+  text-align:center;
+  min-width: 1em;
+  font-weight:bold;
+}
+
+
+/*Footer*/
+.social .fab:hover{
+	cursor: pointer;
+}

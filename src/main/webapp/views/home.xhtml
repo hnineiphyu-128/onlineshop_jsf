@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"> 
+	<ui:composition template="/templates/template.xhtml">
+		<ui:define name="content">
+			<!-- Carousel -->
+			<div class="container container-carousel">
+				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+						<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<h:graphicImage value="/resources/img/1.jpg" styleClass="d-block w-100" style="height: 65vh;" />
+							<div class="img-overlay"></div>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>First slide label</h5>
+								<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<h:graphicImage value="/resources/img/2.jpg" styleClass="d-block w-100" style="height: 65vh;" />
+							<div class="img-overlay"></div>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Second slide label</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<h:graphicImage value="/resources/img/3.jpg" styleClass="d-block w-100" style="height: 65vh;" />
+							<div class="img-overlay"></div>
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Third slide label</h5>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Categories -->
+			<div class="container mt-5">
+				<h2 class="text-center">Categories</h2>
+				<hr class="divider my-2" />
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 text-center">
+						<a href="" class="text-decoration-none wrapper">
+							<span class="fa-stack fa-4x">
+		                        <i class="fas fa-circle fa-stack-2x text-success"></i>
+		                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+		                    </span>
+		                    <p class="font-weight-bold text-dark pt-3">VEGETABLES</p>
+						</a>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="" class="text-decoration-none wrapper">
+							<span class="fa-stack fa-4x">
+		                        <i class="fas fa-circle fa-stack-2x text-success"></i>
+		                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+		                    </span>
+		                    <p class="font-weight-bold text-dark pt-3">FRUITS</p>
+		
+						</a>
+					</div>
+					<div class="col-md-3 text-center">
+						<a href="#" class="text-decoration-none wrapper">
+							<span class="fa-stack fa-4x">
+								<i class="fas fa-circle fa-stack-2x text-success"></i>
+								<i class="fas fa-shipping-fast fa-stack-1x fa-inverse"></i>
+							</span>
+							<p class="text-dark font-weight-bold pt-3"> VEGETABLES </p>
+						</a>
+					</div>
+						<div class="col-md-3 text-center">
+						<a href="#" class="text-decoration-none wrapper">
+							<span class="fa-stack fa-4x">
+								<i class="fas fa-circle fa-stack-2x text-success"></i>
+								<i class="fab fa-cc-paypal fa-stack-1x fa-inverse"></i>
+							</span>
+							<p class="text-dark font-weight-bold pt-3"> LEMONS </p>
+						</a>
+					</div>												
+				</div>
+			</div>
+			
+			<!-- Best Seller -->
+			<div class="container mt-5">
+				<h2 class="text-center">Our Best Seller</h2>
+				<hr class="divider my-2" />
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 pt-5">
+						<div class="card">
+							<div class=" card_img">	
+								<h:graphicImage value="/resources/img/sweater.jpg" styleClass="card-img-top border images" />
+								<div class="detail" data-toggle="modal" data-target="#myModal">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fas fa-eye fa-stack-1x fa-inverse"></i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p class="my-2">Gralic</p>
+								<hr class="item-divider"/>
+								<p class="my-2">200 MMK</p>
+								<button class="btn btn-outline-success btn-block">Add to cart</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 pt-5">
+						<div class="card">
+							<div class=" card_img">	
+								<h:graphicImage value="/resources/img/backpack_1.jpg" styleClass="card-img-top border images" />
+								<div class="detail" data-toggle="modal" data-target="#myModal">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fas fa-eye fa-stack-1x fa-inverse"></i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p class="my-2">Red Onion</p>
+								<hr class="item-divider"/>
+								<p class="my-2">400 MMK</p>
+								<button class="btn btn-outline-success btn-block">Add to cart</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 pt-5">
+						<div class="card">
+							<div class=" card_img">	
+								<h:graphicImage value="/resources/img/shirt_2.jpg" styleClass="card-img-top border images" />
+								<div class="detail" data-toggle="modal" data-target="#myModal">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fas fa-eye fa-stack-1x fa-inverse"></i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p class="my-2">Carrot</p>
+								<hr class="item-divider" />
+								<p class="my-2">500 MMK</p>
+								<button class="btn btn-outline-success btn-block">Add to cart</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 pt-5">
+						<div class="card">
+							<div class=" card_img">	
+								<h:graphicImage value="/resources/img/bracelet.jpg" styleClass="card-img-top border images" />
+								<div class="detail" data-toggle="modal" data-target="#myModal">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fas fa-eye fa-stack-1x fa-inverse"></i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p class="my-2">Eggplant</p>
+								<hr class="item-divider" />
+								<p class="my-2">200 MMK</p>
+								<button class="btn btn-outline-success btn-block">Add to cart</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 pt-5">
+						<div class="card">
+							<div class=" card_img">	
+								<h:graphicImage value="/resources/img/hoodie.jpg" styleClass="card-img-top border images" />
+								<div class="detail" data-toggle="modal" data-target="#myModal">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fas fa-eye fa-stack-1x fa-inverse"></i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p class="my-2">Gralic</p>
+								<hr class="item-divider" />
+								<p class="my-2">200 MMK</p>
+								<button class="btn btn-outline-success btn-block">Add to cart</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 pt-5">
+						<div class="card">
+							<div class=" card_img">	
+								<h:graphicImage value="/resources/img/ring.jpg" styleClass="card-img-top border images" />
+								<div class="detail" data-toggle="modal" data-target="#myModal">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fas fa-eye fa-stack-1x fa-inverse"></i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p class="my-2">Red Onion</p>
+								<hr class="item-divider" />
+								<p class="my-2">400 MMK</p>
+								<button class="btn btn-outline-success btn-block">Add to cart</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 pt-5">
+						<div class="card">
+							<div class=" card_img">	
+								<h:graphicImage value="/resources/img/necklace.jpg" styleClass="card-img-top border images" />
+								<div class="detail" data-toggle="modal" data-target="#myModal">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fas fa-eye fa-stack-1x fa-inverse"></i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p class="my-2">Carrot</p>
+								<hr class="item-divider" />
+								<p class="my-2">500 MMK</p>
+								<button class="btn btn-outline-success btn-block">Add to cart</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 pt-5">
+						<div class="card">
+							<div class=" card_img">	
+								<h:graphicImage value="/resources/img/sneaker.jpeg" styleClass="card-img-top border images" />
+								<div class="detail" data-toggle="modal" data-target="#myModal">
+									<span class="fa-stack fa-lg">
+										<i class="fa fa-circle fa-stack-2x"></i>
+										<i class="fas fa-eye fa-stack-1x fa-inverse"></i>
+									</span>
+								</div>
+							</div>
+							<div class="card-body text-center">
+								<p class="my-2">Eggplant</p>
+								<hr class="item-divider" />
+								<p class="my-2">200 MMK</p>
+								<button class="btn btn-outline-success btn-block">Add to cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<!-- Contact Form -->
+			<div class="contact bg-success my-5">
+				<div class="container py-5 text-center text-light">
+					<h2>Contact Us</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+					<button class="btn btn-outline-light"> Contact Us </button>
+				</div>
+			</div>
+		
+			<!-- New Arrival -->
+			<div class="container">
+				<h2 class="text-center">Our Best Seller</h2>
+				<hr class="divider my-2" />
+				<p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h:graphicImage value="/resources/img/bg1.jpg" styleClass="img-fluid" />
+					</div>
+					<div class="col-md-6">
+						<div class="card mb-3 text-decoration-none new_arrival">
+							<div class="row no-gutters">
+								<div class="col-md-3">
+									<h:graphicImage value="/resources/img/sweater.jpg" styleClass="card-img" />
+								</div>
+								<div class="col-md-9">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-md-10 item-name">
+												<h5 class="card-title">Lemon</h5>
+												<p class="card-text">This is a wider card with supporting text </p>
+											</div>
+											<div class="col-md-2">
+												<button class="btn btn-outline-success btn-sm"><i class="fas fa-eye" data-target="#detailModal" data-toggle="modal"></i></button>
+		
+												<button class="btn btn-outline-success btn-sm mt-1"><i class="fas fa-cart-plus"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="card mb-3 text-decoration-none new_arrival">
+							<div class="row no-gutters">
+								<div class="col-md-3">
+									<h:graphicImage value="/resources/img/bracelet.jpg" styleClass="card-img" />
+								</div>
+								<div class="col-md-9">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-md-10 item-name">
+												<h5 class="card-title">Lemon</h5>
+												<p class="card-text">This is a wider card with supporting text </p>
+											</div>
+											<div class="col-md-2">
+												<button class="btn btn-outline-success btn-sm"><i class="fas fa-eye" data-target="#detailModal" data-toggle="modal"></i></button>
+		
+												<button class="btn btn-outline-success btn-sm mt-1"><i class="fas fa-cart-plus"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="card mb-3 text-decoration-none new_arrival">
+							<div class="row no-gutters">
+								<div class="col-md-3">
+									<h:graphicImage value="/resources/img/shirt_2.jpg" styleClass="card-img" />
+								</div>
+								<div class="col-md-9">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-md-10 item-name">
+												<h5 class="card-title">Lemon</h5>
+												<p class="card-text">This is a wider card with supporting text </p>
+											</div>
+											<div class="col-md-2">
+												<button class="btn btn-outline-success btn-sm"><i class="fas fa-eye" data-target="#detailModal" data-toggle="modal"></i></button>
+		
+												<button class="btn btn-outline-success btn-sm mt-1"><i class="fas fa-cart-plus"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="card mb-3 text-decoration-none new_arrival">
+							<div class="row no-gutters">
+								<div class="col-md-3">
+									<h:graphicImage value="/resources/img/backpack_1.jpg" styleClass="card-img" />
+								</div>
+								<div class="col-md-9">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-md-10 item-name">
+												<h5 class="card-title">Lemon</h5>
+												<p class="card-text">This is a wider card with supporting text </p>
+											</div>
+											<div class="col-md-2">
+												<button class="btn btn-outline-success btn-sm"><i class="fas fa-eye" data-target="#detailModal" data-toggle="modal"></i></button>
+		
+												<button class="btn btn-outline-success btn-sm mt-1"><i class="fas fa-cart-plus"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="card mb-3 text-decoration-none new_arrival">
+							<div class="row no-gutters">
+								<div class="col-md-3">
+									<h:graphicImage value="/resources/img/ring.jpg" styleClass="card-img" />
+								</div>
+								<div class="col-md-9">
+									<div class="card-body">
+										<div class="row">
+											<div class="col-md-10 item-name">
+												<h5 class="card-title">Lemon</h5>
+												<p class="card-text">This is a wider card with supporting text </p>
+											</div>
+											<div class="col-md-2">
+												<button class="btn btn-outline-success btn-sm"><i class="fas fa-eye" data-target="#detailModal" data-toggle="modal"></i></button>
+		
+												<button class="btn btn-outline-success btn-sm mt-1"><i class="fas fa-cart-plus"></i></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</ui:define>
+	</ui:composition>
+<body> 
+</body> 
+</html>
